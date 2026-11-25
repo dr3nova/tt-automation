@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TT automation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#e9eaec,#141517);--ink:light-dark(#111,#eee);--mut:light-dark(#555,#aaa);--acc:#ff4f00;--card:light-dark(#fff,#1e2023)}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Geist,system-ui,sans-serif;overflow-x:clip}
+nav{display:flex;flex-wrap:wrap;gap:18px;align-items:center;padding:18px max(5vw,16px);border-bottom:1px solid light-dark(#ccc,#333)}
+nav b{margin-right:auto;font-weight:700}nav a{color:var(--ink);text-decoration:none;padding:10px 0}nav a:hover{color:var(--acc)}
+main{max-width:760px;margin:0 auto;padding:clamp(28px,4vw,64px) max(5vw,16px)}
+h1{font-size:clamp(32px,5vw,48px);line-height:1.05;text-wrap:balance;margin:0 0 16px}
+h2{font-size:21px;margin:32px 0 8px}.m{color:var(--mut);font-size:14px}
+.pipe{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:32px 0}
+.pipe div{background:var(--card);border-radius:14px;padding:20px}
+.pipe div b{display:block;font-size:20px}.pipe div:last-child b{color:var(--acc)}
+@media(max-width:600px){.pipe{grid-template-columns:1fr}}
+footer{padding:24px max(5vw,16px);color:var(--mut);font-size:14px;text-align:center}
+html{scroll-padding-top:16px}</style></head><body id="top">
+<nav><b>TT automation</b><a href="#top">Home</a><a href="#terms">Terms</a><a href="#privacy">Privacy</a></nav><main>
+<h1>Post your own videos to TikTok from a link</h1>
+<p>TT automation is a small personal tool run by one creator. It takes a link to a video the creator owns, downloads the file, and posts it to the creator's own TikTok account using TikTok's official Content Posting API.</p>
+<div class="pipe"><div><span class="m">Step 1</span><b>Paste a link</b>to the creator's own video</div><div><span class="m">Step 2</span><b>Download</b>the video file locally</div><div><span class="m">Step 3</span><b>Post to TikTok</b>via the Content Posting API</div></div>
+<h2>How TikTok is used</h2>
+<ul><li><b>Login Kit</b> (user.info.basic): the creator signs in with TikTok and authorizes the tool. Only the open ID, display name and avatar are read, to show which account is connected.</li>
+<li><b>Content Posting API</b> (video.publish): videos are posted directly to the authorized creator's own profile, only when the creator starts an upload.</li></ul>
+<h2>Who can use it</h2><p>This tool is for the creator's own account only. It is not offered to the public and does not post on behalf of other users.</p>
+<hr style="margin:48px 0;border:0;border-top:1px solid #8884"><section id="terms">
+<h1>Terms of Service</h1><p class="m">Last updated 25 November 2026</p>
+<h2>1. What this is</h2><p>TT automation ("the tool") is a personal, non-commercial tool that posts videos to a TikTok account that the user owns and has authorized.</p>
+<h2>2. Your content</h2><p>You may only post videos you own or have the rights to post. You are responsible for everything posted through the tool and for following TikTok's Terms of Service and Community Guidelines.</p>
+<h2>3. TikTok account</h2><p>You connect your TikTok account through TikTok's official sign-in. You can revoke access at any time in TikTok's settings under Security and permissions, Manage app permissions.</p>
+<h2>4. No warranty</h2><p>The tool is provided as is, without warranty of any kind. It may stop working if TikTok or any third-party service changes.</p>
+<h2>5. Liability</h2><p>To the extent permitted by law, the operator is not liable for any loss arising from use of the tool.</p>
+<h2>6. Changes</h2><p>These terms may be updated. The date above shows the latest version.</p>
+</section><hr style="margin:48px 0;border:0;border-top:1px solid #8884"><section id="privacy">
+<h1>Privacy Policy</h1><p class="m">Last updated 25 November 2026</p>
+<h2>What we collect</h2><p>When you connect TikTok, the tool receives an access token and your basic profile info (open ID, display name, avatar) through Login Kit. It also handles the video files you choose to post.</p>
+<h2>How it is used</h2><p>This data is used only to post videos you select to your own TikTok account and to show which account is connected. It is not sold, shared, or used for advertising.</p>
+<h2>Where it is stored</h2><p>Tokens and settings are stored locally on the operator's own computer. Downloaded video files are kept locally only until they are posted, and can be deleted at any time.</p>
+<h2>Third parties</h2><p>Videos are sent to TikTok through its official API. A video download service may be used to fetch the video from the link you provide.</p>
+<h2>Your choices</h2><p>You can revoke the tool's access at any time in TikTok's settings under Security and permissions, Manage app permissions. Revoking access stops all posting.</p>
+<h2>Changes</h2><p>This policy may be updated. The date above shows the latest version.</p>
+</section></main><footer>TT automation is a personal, non-commercial tool. Not affiliated with TikTok.</footer></body></html>
